@@ -160,6 +160,12 @@ success and sustainable consumption and production.</td>
             </table>
             <br>
             ''', unsafe_allow_html=True)
+
+        with st.expander("Benefits", expanded=True):
+            col1, col2 = st.columns(2)
+            col1.markdown('<b>Impact Benefits:  </b>   Increased productivity', unsafe_allow_html=True)
+            col2.markdown('<b>Business Benefits:</b> Attract & retain employees', unsafe_allow_html=True)
+
         with st.expander("Important Keywords", expanded=True):
             st.multiselect(
                 'Keywords',
